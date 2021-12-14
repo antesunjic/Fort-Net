@@ -1,0 +1,80 @@
+@import "../../../../../scss/variables";
+
+.input {
+  height: 38px;
+  width: 90vw;
+  box-sizing: border-box;
+  height: 38px;
+  width: 90vw;
+  box-sizing: border-box;
+  margin-bottom: 5vh;
+  border: solid;
+  border-color: rgb(184, 184, 184);
+  border-width: 1px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search {
+  display: none;
+}
+
+.input[type="text"] {
+  padding-left: 35px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.searchIcon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.searchForLaptop {
+  display: none;
+}
+.searchDesktopLabel {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .input {
+    width: 95%;
+  }
+  .searchDesktop {
+    width: 40vw;
+  }
+  .searchIcon {
+    z-index: 5;
+  }
+  .search {
+    display: flex;
+  }
+  .searchLabel {
+    display: inherit;
+  }
+  .searchForLaptop {
+    display: inherit;
+  }
+  .searchMobile {
+    display: none;
+  }
+  .wholeDesktopSearch {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+}
+
+@media (min-width: 770px) {
+  .searchDesktopLabel {
+    display: block;
+    width: 40vw;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 1vw;
+  }
+}

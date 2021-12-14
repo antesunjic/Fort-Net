@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #404040;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (min-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+}

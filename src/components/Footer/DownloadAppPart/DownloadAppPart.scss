@@ -1,0 +1,140 @@
+@import "../../../scss/variables";
+
+.downloadAppPart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.downloadTitle {
+  text-align: left;
+  margin-left: $margin-left-standard;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.upperPart {
+  display: flex;
+  justify-content: space-between;
+  margin: $margin-standard;
+  position: relative;
+}
+
+.upperPart p {
+  height: 200px;
+  width: 48%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 200;
+  align-self: flex-start;
+}
+
+.fortHand {
+  width: 52%;
+  max-width: 170px;
+  max-height: 320px;
+}
+
+.lowerPart {
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  bottom: 3vh;
+  left: 0vw;
+  z-index: 15;
+}
+
+.appStore,
+.googlePlay {
+  width: 22vw;
+}
+
+.appStore {
+  margin: 0 7vw 0 0;
+}
+
+// small mobile media query
+
+@media (max-width: $small-mobile) {
+  .fortHand {
+    transform: scale(0.75);
+  }
+}
+
+//medium mobile media query
+
+@media (min-width: $medium-mobile) {
+  .fortHand {
+    transform: scale(0.8);
+  }
+}
+
+// large mobile media query
+
+@media (min-width: $large-mobile) {
+  .fortHand {
+    transform: scale(0.85);
+  }
+}
+
+//tablet media query
+
+@media (min-width: $tablet) and (max-width: 770px) {
+  .downloadAppPart {
+    position: relative;
+  }
+  .downloadTitle {
+    position: absolute;
+    top: 110;
+    left: 110;
+  }
+  .upperPart {
+    margin: 0 50px;
+  }
+  .upperPart p {
+    align-self: center;
+  }
+  .fortHand {
+    transform: scale(1.1);
+    margin-right: 25px;
+    margin-bottom: 50px;
+  }
+  .downloadTitle {
+    margin-left: 50px;
+  }
+  .lowerPart {
+    left: 0vw;
+    bottom: 10vh;
+  }
+}
+
+//laptop media query
+@media (min-width: 770px) {
+  .downloadAppPart {
+    margin-left: 3vw;
+    padding: 0 20vw;
+    position: relative;
+    margin-top: 7vh;
+  }
+  .fortHand {
+    position: absolute;
+    left: 40vw;
+    top: -60px;
+    z-index: -1;
+    transform: scale(1.1);
+  }
+  .appStore,
+  .googlePlay {
+    width: 10vw;
+    margin-left: 2vw;
+  }
+  .upperPart p,
+  .downloadTitle {
+    text-align: center;
+    width: 30vw;
+    justify-content: space-around;
+  }
+}

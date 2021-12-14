@@ -1,0 +1,85 @@
+@import "../../../../../scss/variables";
+
+.filters {
+  background-color: #f9f9f9;
+  padding-left: 25px;
+  margin-right: 25px;
+}
+
+.filtersLaptop {
+  width: 15vw;
+  margin: 0;
+  align-items: left;
+  margin-right: 25px;
+  justify-content: space-evenly;
+}
+
+.filtersLaptop h3 {
+  text-align: left;
+  margin: 25px 0 35px 0;
+}
+.objectTypeLaptop {
+  text-align: left;
+  margin: 0;
+}
+
+.objectTypeLaptop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 15vw;
+}
+
+.objectTypeLaptopButton {
+  padding: 0 20px;
+  width: 100px;
+  min-width: fit-content;
+  margin: 0 7px 8px 0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: $border-color;
+  height: 37px;
+  max-height: 60px;
+  min-height: fit-content;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.resetButton {
+  margin-top: 3vh;
+  width: 15vw;
+  height: 10vh;
+  color: white;
+  background-color: #ff607b;
+  border: none;
+  border-radius: 8px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 1400px) {
+  .resetButton {
+    width: 13vw;
+    height: 5vh;
+  }
+}
+
+.resetButtonDisabled {
+  @extend .resetButton;
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.objectTypeLaptopButton:hover {
+  border-color: gray;
+}
+
+.objectTypeLaptopButtonActive {
+  @extend .objectTypeLaptopButton;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: white;
+}
