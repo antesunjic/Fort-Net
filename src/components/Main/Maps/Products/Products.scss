@@ -147,7 +147,7 @@ $label-height-laptop-large: 70px;
 
 //tablet media query
 
-@media (max-width: $tablet) {
+@media (min-width: $tablet) {
   .products {
     grid-template-columns: repeat(auto-fill, minmax($img-width-tablet, 1fr));
   }
@@ -168,7 +168,7 @@ $label-height-laptop-large: 70px;
 
 $productsLaptopWidth: 35vw;
 
-@media (min-width: 1400px) {
+@media (min-width: 850px) {
   .productsLaptop {
     // width: 40vw;
     display: flex;
@@ -205,7 +205,7 @@ $productsLaptopWidth: 35vw;
 
 // large desktop
 $productsLaptopWidthLarge: 40vw;
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .productsLaptop {
     // width: 40vw;
     display: flex;
